@@ -1,0 +1,29 @@
+:root{
+  --bg: #0e0f13;
+  --card: rgba(255,255,255,0.06);
+  --border: rgba(255,255,255,0.14);
+  --text: #e8eaf0;
+  --muted: #b8bfd1;
+  --primary: #5b8cff;
+  --accent: #a067ff;
+}
+
+body{ background: var(--bg); color: var(--text); }
+a{ text-decoration: none; }
+
+.glass {
+  background: var(--card);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 16px;
+}
+
+.hero {
+  background: radial-gradient(1200px 400px at 10% 0%, rgba(91,140,255,.25), transparent 60%),
+              radial-gradient(1000px 300px at 90% 10%, rgba(160,103,255,.25), transparent 60%);
+}
+
+.navbar-dark .nav-link.active { color: #fff !important; }
+.navbar-dark .nav-link { color: var(--muted); }
+.navbar-dark .nav-link:hover { color: #fff; }
